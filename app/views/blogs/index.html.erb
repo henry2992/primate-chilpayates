@@ -1,0 +1,115 @@
+    
+        <ul class="cb-slideshow">
+            <li><span>Image 01</span><div><h3>Feliz·Navidad</h3></div></li>
+            
+
+            <li><span>Image 02</span><div><h3>Feliz·Navidad</h3></div></li>
+            <li><span>Image 03</span><div><h3>Feliz·Navidad</h3></div></li>
+            <li><span>Image 04</span><div><h3>Prospero Año</h3></div></li>
+            <li><span>Image 05</span><div><h3>Y Felicidad</h3></div></li>
+            <li><span>Image 06</span><div><h3>Primates Chilpayates</h3></div></li>
+        </ul>
+
+            <div id="contenido">
+            <p>
+            Este año volveremos a jugar al amigo secreto 2.0. Para facilitar la dinámica del juego he creado esta aplicación web, que se encargara de todo el trabajo de receptar, organizar y sortear a los jugadores. Esta aplicación dará a conocer las reglas del juego a todos los integrantes de la familia. Mi asistente personal “Femputadora” (Un algoritmo de inteligencia artificial) que fue construido con este único propósito, será la encargada de sortear a los jugadores, por lo tanto no existe ningún tipo de preferencia, trampa o error humano en el proceso.
+
+            Su única misión consiste en leer y entender las reglas del juego, una vez que estas estén claras, podrán oprimir el botón “Jugar” al final de esta pagina.
+
+            1-  Todos los participante deberán estar registrados hasta el MIERCOLES 9 DE DICIEMBRE. 
+            2-  El precio máximo de su regalo será tan grande como su corazón. Sugerimos que ronden los $50 USD. 
+            3-  Cada Jugador deberá pensar en el regalo que más quiera recibir en este año. El regalo debe ser algo posible de comprar dentro del tiempo, espacio y presupuesto en los que se desarrolla este juego.
+            4-  Una vez que cada jugador tenga definido su regalo deberán utilizar su infinita imaginación y alma poética para escribir:
+            Un poema brillante octosílabos preciso ,que en el final finaliza
+            y empieza por adelante.
+            Debe tener ocho versos
+            y ser de rima elegante. 
+
+            5-  El punto tres puede ser ignorado. Pero de todas formas deberán describir su regalo deseado en forma de rima. La rima deberá dar una pista del regalo deseado y la persona que lo vaya a recibir. Pueden tomar como ejemplo esta pésima rima:
+
+            Rima:
+            Este curioso personaje,
+            Un 29 de febrero nace,
+            Y en esta navidad solo desea,
+            Que sus pies cubiertos sean.
+                    Personaje: Henry Sebastián.
+                    Regalo: Zapatos.
+
+            6-  El poema con la mejor rima se llevara el regalo secreto de este año.
+            7-  En contraste el dueño de la rima menos elaborada, será el encargado de organizar el amigo secreto del siguiente año.
+            8-  Una vez tengan todo esto claro, podrán presionar el botón “Jugar”; y llenar el formulario con la siguiente información:   
+            a.  Email del representante
+            b.  Nombre del Jugador
+            c.  Regado Elegido y descripción del mismo.
+            d.  Rima
+            9-  Si el regalo es algo difícil de encontrar puede agregar a la descripción un lugar de donde comprarlo o cualquier otra consideración en el espacio destinado para descripción del regalo. 
+
+            IMPORTANTE INFORMACIÓN PARA LLENAR EL FORMULARIO
+            A.  Cada jugador esta encargado de realizar su rima. Sin embargo, un jugador puede escoger un representante para enviar la información de su regalo y su rima.  
+            B.  Una persona puede representar a un grupo entero de jugadores. Por ejemplo yo: “Henry Sebastián” representaré a mi papa, mama y hermana Josy.
+            C.  El representante del grupo deberá llenar el formulario para cada jugador y DEBERÁ UTILIZAR SU CORREO ELECTRONICO, como forma de comunicación. Como ejemplo: Yo “Henry Sebastián” llenare el formulario 4 veces incluyendo mi información, la de papá, mamá y hermana, pero en todos los formularios utilizare mi correo electrónico.
+            D.  Una vez que haya recibido toda la información. “Femputadora” realizara el trabajo para la cual fue creada. 
+            E.  El representante del grupo recibirá la información del amigo secreto de todos los jugadores y será el encargado de transmitir esa información a su grupo y/o/U familia. 
+            F.  En caso de alguna duda, aclaración, sugerencia, o si no logran descubrir el regalado podrán escribirme de manera directa a henry2992@hotmail.com. Sin embargo, el jugador que pida “ayuda fuera de la normal” quedará descalificado para el premio final.
+            *Considérese como “ayuda fuera de lo normal”, al pedido explicito de revelar un nombre o premio.
+            G.  Los jugadores recibirán la información de su amigo secreto el día Domingo 13 de Diciembre. 
+            </p>
+
+
+            </div>
+            <button type="button" class="create-btn btn-large" data-toggle="modal" data-target="#mynewplayer">
+              Jugar
+            </button>
+            <audio autoplay="autoplay" loop="loop"><source src="images/feliz.mp3" type="audio/mpeg" /></audio>
+        
+
+
+
+          
+
+        
+
+
+
+ <!-- Modal  create action -->
+      <%= form_for(@blog) do |f| %>
+        <div class="modal fade" id="mynewplayer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Create a new League</h4>
+            </div>
+            
+               <div class="field">
+                <%= f.label :Email %><br>
+                <%= f.text_field :email, class: "form-control post_content" %>
+              </div>
+              <div class="field">
+                <%= f.label :Nombre %><br>
+                <%= f.text_field :name, class: "form-control post_content" %>
+              </div>
+              <div class="field">
+                <%= f.label :Regalo %><br>
+                <%= f.text_area :gift,class: "form-control post_content" %>
+              </div>
+              <div class="field">
+                <%= f.label :Rima %><br>
+                <%= f.text_area :rima, class: "form-control post_content" %>
+              </div>
+            
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="mynewpostclose">Close</button>
+              <%= submit_tag "Create", class: "btn btn-primary" %>
+            </div>
+          </div>
+        </div>
+        </div>
+      <% end %>
+    <!-- Modal -->
+
+
+
+
