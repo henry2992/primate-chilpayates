@@ -11,8 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '3.2.0.0'
 gem 'devise'
-gem 'spring'
-gem 'rails_admin'
+ gem 'spring'
 
 
 group :development, :test do
@@ -20,10 +19,11 @@ group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
   gem 'web-console', '~> 2.0'
+
 end
 
 
 group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+  gem 'pg', '0.17.1'
+  gem 'rails_12factor', '0.0.2'
 end
