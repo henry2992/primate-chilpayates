@@ -37,7 +37,7 @@ z-index: 100;
 }
 .cb-slideshow:after {
     content: '';
-    background: transparent url(/assets/pattern-deb36e1415642450583c55b48127df16c5faf6cdb7b13a85da498aebdc3bf6b2.png) repeat top left;
+    /*background: transparent url(/assets/pattern-deb36e1415642450583c55b48127df16c5faf6cdb7b13a85da498aebdc3bf6b2.png) repeat top left;*/
 }
 .cb-slideshow li span {
     width: 100%;
@@ -79,9 +79,9 @@ z-index: 100;
     line-height: 120px;
     color: rgba(169,3,41, 0.8);
 }
-.cb-slideshow li:nth-child(1) span { background-image: url(/assets/6-76b0dc23dc9c6518d012ea2fdeb667266829ab2d4276135c0c651bbba677f0e4.jpg) }
+/*.cb-slideshow li:nth-child(1) span { background-image: url(/assets/6-76b0dc23dc9c6518d012ea2fdeb667266829ab2d4276135c0c651bbba677f0e4.jpg) }*/
 .cb-slideshow li:nth-child(2) span {
-    background-image:  url(/assets/5-d07b92021029aa6f20a70cd692548944bf111e9a812b46c45c63f665dc366dc8.jpg);
+    /*background-image:  url(/assets/5-d07b92021029aa6f20a70cd692548944bf111e9a812b46c45c63f665dc366dc8.jpg);*/
 
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
@@ -90,7 +90,7 @@ z-index: 100;
     animation-delay: 6s;
 }
 .cb-slideshow li:nth-child(3) span {
-    background-image: url(/assets/4-3b81f4a0e8532d0563e30d518c593a93033124427faaa12ca32c2d40294d26df.jpg);
+    /*background-image: url(/assets/4-3b81f4a0e8532d0563e30d518c593a93033124427faaa12ca32c2d40294d26df.jpg);*/
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -98,7 +98,7 @@ z-index: 100;
     animation-delay: 12s;
 }
 .cb-slideshow li:nth-child(4) span {
-    background-image: url(/assets/3-034f7d5928239f16b6d9eefc7e61d941be8e507d5dfbd1092c56b8c41853c2c6.jpg);
+    /*background-image: url(/assets/3-034f7d5928239f16b6d9eefc7e61d941be8e507d5dfbd1092c56b8c41853c2c6.jpg);*/
     -webkit-animation-delay: 18s;
     -moz-animation-delay: 18s;
     -o-animation-delay: 18s;
@@ -106,7 +106,7 @@ z-index: 100;
     animation-delay: 18s;
 }
 .cb-slideshow li:nth-child(5) span {
-    background-image: url(/assets/2-967bc0c2c7c507019822b04550ef32e302a379f68e1797f9b3a597e900221569.jpg);
+    /*background-image: url(/assets/2-967bc0c2c7c507019822b04550ef32e302a379f68e1797f9b3a597e900221569.jpg);*/
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
@@ -114,7 +114,7 @@ z-index: 100;
     animation-delay: 24s;
 }
 .cb-slideshow li:nth-child(6) span {
-    background-image: url(/assets/1-176a5aad80ab54299dadd955eed66c6ff551c251c05498c705af1f5bb9790c79.jpg);
+    /*background-image: url(/assets/1-176a5aad80ab54299dadd955eed66c6ff551c251c05498c705af1f5bb9790c79.jpg);*/
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
