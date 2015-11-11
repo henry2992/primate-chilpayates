@@ -12,7 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '3.2.0.0'
 gem 'devise'
 gem 'spring'
-gem 'rails-admin'
+gem 'rails_admin'
 
 
 
