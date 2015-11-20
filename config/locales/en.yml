@@ -19,5 +19,18 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
+# config/locales/en.yml
 en:
-  hello: "Hello world"
+  activerecord:
+    errors:
+      models:
+        blog:
+          attributes:
+            email:
+              blank: "debe estar lleno"
+            name:
+              blank: "debe estar lleno"
+            gift:
+              blank: "debe estar lleno"
+            rima:
+              blank: "debe estar lleno"
